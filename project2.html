@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #0d77e9;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        nav {
+            background-color: #fc4bed;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 12px;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            background-color: #ff5c8d;
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 50px 10%;
+            text-align: center;
+        }
+
+        h2 {
+            color: #2d3e50;
+            font-size: 32px;
+        }
+
+        .projects, .about {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #1a252f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer a {
+            color: #ff5c8d;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Portfolio</h1>
+        <p>Your gateway to my work and experience</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! My name is Tanmay Tripathi.I'm a passionate learner and I'm always looking to learn new technologies!</p>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects">
+            <div class="card">
+                <img src="https://via.placeholder.com/300" alt="1">
+                <h3>Project 1</h3>
+                <p>c language.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300" alt="2">
+                <h3>Project 2</h3>
+                <p>python</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300" alt="3">
+                <h3>Project 3</h3>
+                <p>Java</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch, feel free to reach out!</p>
+        <p>Email: example@example.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; Tanmay Tripathi. All rights reserved. <br> Visit my <a href="#">LinkedIn</a> and <a href="#">GitHub</a>.</p>
+    </footer>
+
+</body>
+</html>
